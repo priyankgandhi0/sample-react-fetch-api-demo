@@ -1,0 +1,53 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.post-wrapper {
+  flex: 2 1;
+}
+
+.album-wrapper {
+  flex: 1 1;
+}
+
+img.loader {
+  width: 150px;
+  align-self: center;
+  -webkit-animation-name: spin;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+    /* Firefox*/
+    moz-transform: rotate3d(1, 1, 1, 0deg);
+    /*Microsoft Browsers*/
+    ms-transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+    /*Firefox*/
+    moz-transform: rotate3d(1, 1, 1, 360deg);
+    /*Microsoft Browsers*/
+    ms-transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+  }
+}

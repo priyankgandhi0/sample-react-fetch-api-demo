@@ -1,0 +1,18 @@
+.post-item-wrapper {
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.post-item-wrapper:hover {
+  box-shadow: 1px 2px 4px 2px #ccc;
+  border-radius: 3px;
+}
+
+h1, p {
+  text-transform: capitalize;
+}
+
+.post-item-wrapper h1 {
+  font-size: 16px;
+}
